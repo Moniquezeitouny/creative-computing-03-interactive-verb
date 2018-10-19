@@ -12,6 +12,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background: #e91e63;
 }
 
 .center {
@@ -33,3 +34,98 @@ body {
   text-align: center;
 }
 
+@keyframes animate {
+0%
+    { transform:  translate(0px);
+    }
+10%
+    { transform:  translate(-30px);
+    }
+15%
+    { transform:  translate(0px);
+    }
+25%
+    { transform:  translate(-20px);
+    }
+30%
+    { transform:  translate(0px);
+    }
+40%
+    { transform:  translate(0px);
+    }
+45%
+    { transform:  translate(0px);
+    }
+100%
+    { transform:  translate(0px);
+    }
+      }
+
+h2
+{
+  color:#fff;
+  font-family: futura;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h3
+{text-align: center;
+  color:#fff;
+   font-family: futura;
+  font-weight: lighter;;
+}
+
+h4
+{text-align: center;
+color:#fff;
+font-family: futura;
+  font-weight: lighter;
+  }
+
+h4:hover
+{color:#fff;}
+
+
+.menu
+{text-align: center;
+  color:#fff;
+  font-family: futura;
+  font-weight: lighter;
+  margin-top: 400px;
+}
+
+.verb1
+{
+  padding-bottom: 10px;
+}
+
+.verb2
+{
+  padding-bottom: 10px;
+}
+
+
+h1 
+{position: absolute;
+  top:50%;
+  left: 50%;
+  width:100%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  margin:0;
+  padding:0;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+
+h1 span:hover { 
+  position: relative;
+  display: inline-block;
+      font-size: 250px;
+      font-family: 'PT Sans', sans-serif;
+      animation: animate 1.5s linear infinite;
+      
+}
