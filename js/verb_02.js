@@ -31,3 +31,26 @@ function randomFloat (min, max) {
   return parseFloat(value.toFixed(2));
 }
 
+
+var shape = document.querySelector(".shape");
+
+var width= randomNumber(10,400);
+var height= randomNumber(10,400)
+shape.style.width = width+"px";
+shape.style.height = width+"px";
+
+function hslColor(h, s, l) {  
+  var hue = h;
+  var saturation = s + "%";
+  var luminance = l + "%";
+
+  var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
+
+  return color;
+}
+
+
+var hue= randomNumber(250,350);
+var color= hslColor(hue,770,20);
+var element= document.querySelector('body');
+element.style.background= color;

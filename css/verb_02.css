@@ -12,6 +12,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background-color: black;
 }
 
 .center {
@@ -23,7 +24,63 @@ body {
   width: auto;
 }
 
+
 .content {
   height: 100%;
   width: 100%;
+  padding: 20px;
+}
+
+@keyframes move {
+  0%{
+  transform: translate(50px,500px)rotateY(20deg);
+  background-color: pink;
+  }
+  
+  16%{
+  transform: translate(300px,300px)rotateY(40deg);
+  background-color: pink;
+  }
+  25%{
+
+  transform: translate(500px,100px) rotateY(60deg);
+  background-color: violet;
+}
+ 50%{
+  transform: translate(500px,60px) rotateY(3000deg);
+ background-color: white;
+ }
+  75%{
+  transform: translate(700px,400px)rotateY(300deg);
+  background-color: violet;
+  }
+  100%{
+  transform: translate(800px,500px)rotateY(60deg);
+  background-color: pink;
+}
+}
+
+
+.shape {
+  background: red;
+  width: 400px;
+  height: 400px;
+  border-radius: 200px;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+
+.transforms {
+  transform: rotateZ(45deg);
+  transform: rotateX(45deg);
+  transform: rotateY(45deg);
+  transform: skewX(45deg);
+  transform: skewY(45deg);
+  transform: scaleX(1.5);
+  transform: scaleY(1.5);
+  transform: translateX(50px);
+  transform: translateY(50px);
 }
